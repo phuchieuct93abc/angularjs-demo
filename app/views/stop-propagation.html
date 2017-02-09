@@ -1,0 +1,16 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">Stop propagation</h3>
+
+	</div>
+	<div class="panel-body ">
+			<pre>event.stopPropagation() is used when you want to call child function 
+		but don't want to call wrapper's function</pre>
+		<div class="wrapper bg-danger" ng-click="alert('parent')">
+			<div class="child child-left" ng-click="alert('child')"> No stop propagation</div>
+			<div class="child child-right" ng-click="stopPropagation('child',$event)"> Stop propagation</div>
+			
+		</div>
+	</div>
+
+</div>

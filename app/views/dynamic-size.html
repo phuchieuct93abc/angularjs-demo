@@ -3,6 +3,8 @@
     <h3 class="panel-title">Dynamic size</h3>
   </div>
   <div class="panel-body">
+      <pre>Use {display: flex} for wrapper and {flex:1} for dynamic content</pre>
+
   <button ng-click="childCollapse=!childCollapse">Change child-left</button>
     <div class="wrapper bg-warning">
       <div class="child child-left bg-success" ng-class="{'no-width':childCollapse}">
@@ -28,8 +30,5 @@
     </div>
     
   </div>
-  <div class="panel-body">
-    Use {display: flex} for wrapper and {flex:1} for dynamic content
-    
-  </div>
+
 </div>
