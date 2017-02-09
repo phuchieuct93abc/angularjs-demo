@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Dynamic size</h3>
+  </div>
+  <div class="panel-body">
+  <button ng-click="childCollapse=!childCollapse">Change child-left</button>
+    <div class="wrapper bg-warning">
+      <div class="child child-left bg-success" ng-class="{'no-width':childCollapse}">
+        Left
+        
+      </div>
+      <div class="child child-right bg-danger">
+        right
+        
+      </div>
+    </div>
+    
+  </div>
+  <div class="panel-body">
+    <div class="wrapper flex bg-warning">
+      <div class="child child-left bg-success " ng-class="{'no-width':childCollapse}">
+        Left
+        
+      </div>
+      <div class="child child-right child-flex bg-danger">
+        right
+        
+      </div>
+    </div>
+    
+  </div>
+</div>

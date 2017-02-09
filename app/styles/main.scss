@@ -93,6 +93,8 @@ body {
   position:relative;
   width:400px;
   height:400px;
+    padding:10px;  
+
 }
 .content{
   position:absolute;
@@ -117,4 +119,27 @@ body {
       display: flex;
     align-items: center;
     justify-content: center;
+}
+.child{
+  height: 100%;
+  display: inline-block; 
+  float: left;
+
+}
+.child-left{
+  width: 100px;
+
+          transition: all 1s ease
+}
+.child-right{
+  width: calc(100% - 100px);
+}
+.no-width{
+  width: 0;
+}
+.flex{
+  display: flex;
+  .child-flex{
+    flex:1
+  }
 }

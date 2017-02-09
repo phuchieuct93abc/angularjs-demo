@@ -1,13 +1,17 @@
 <div class="panel panel-primary">
-  <div class="panel-body ">
-    <div class="btn btn-primary" ng-click="verticalCenter = !verticalCenter">Center</div>
-    <div class="wrapper bg-danger" ng-class="{'vertical':verticalCenter}">Hello</div>
-    </div>
-  
+	<div class="panel-heading">
+		<h3 class="panel-title">Vertical</h3>
+	</div>
+	<div class="panel-body ">
+		<div class="btn btn-primary" ng-click="verticalCenter = !verticalCenter">Center</div>
+		<div class="wrapper bg-danger" ng-class="{'vertical':verticalCenter}">Hello</div>
+	</div>
+	<div class="panel-footer">
+		Css for wrapper:
+		<pre>
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+		</pre>
+	</div>
 </div>
-Css for wrapper: 
-<pre>
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    </pre>

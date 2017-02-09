@@ -8,7 +8,8 @@
  * Controller of the app2App
  */
 angular.module('app2App')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope) {
+  	$scope.hieu={}
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
