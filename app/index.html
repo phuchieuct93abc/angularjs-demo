@@ -17,38 +17,38 @@
   </head>
   <body ng-app="app2App">
     <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="container" ng-controller="MainCtrl">
+        <li role="presentation" class="active"><a href="#position">Position</a></li>
+        <li role="presentation"><a href="#vertical-align">vertical-align</a></li>
+        <li role="presentation"><a href="#dot-rule">dot-rule</a></li>
+        <li role="presentation" ><a href="#dynamic-size">Dynamic size</a></li>
+        <li role="presentation"><a href="#stop-propagation">Stop propagation</a></li>
+      <div class="container" data-spy="scroll" data-target="#navbar-example2">
+          <div ng-include="'views/position.html'" ></div>
+      <div ng-include="'views/vertical-align.html'" ></div>
+      <div ng-include="'views/dot-rule.html'" ></div>
+      <div ng-include="'views/dynamic-size.html'" ></div>
+      <div ng-include="'views/stop-propagation.html'" ></div>
 
-
-    <div class="container" ng-controller="MainCtrl"> 
-    <div ng-include="'views/position.html'" ></div>
-    <div ng-include="'views/vertical-align.html'" ></div>
-    <div ng-include="'views/dot-rule.html'" ></div>
-    <div ng-include="'views/dynamic-size.html'" ></div>
-    <div ng-include="'views/stop-propagation.html'" ></div>
+      </div>
     
-
     </div>
-
     <div class="footer">
       <div class="container">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
     </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+    <script>
+    !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+    (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+    r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+    }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -57,11 +57,10 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
