@@ -1,0 +1,31 @@
+/* Put your css in here */
+
+.wrapper{
+  position:relative;
+  width:400px;
+  height:400px;
+}
+.content{
+  position:absolute;
+}
+.left-top{
+  left:0;
+  top:0;
+}
+.left-bottom{
+  left:0;
+  bottom:0;
+}
+.right-top{
+  right:0;
+  top:0;
+}
+.right-bottom{
+  right:0;
+  bottom:0;
+}
+.vertical{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}

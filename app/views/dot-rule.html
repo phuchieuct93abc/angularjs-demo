@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+    <h3 class="panel-title">Dot rule</h3>
+  </div>
+  <div class="panel-body">
+  <h3>Wrong way </h3>
+
+  Display: {{name}}
+    <input ng-model="name">
+      <div ng-if="!hide">Inside ng-if
+        <input ng-model="name">
+      </div>
+       <div >No ng-if
+        <input ng-model="name">
+      </div>
+  
+<h3>Correct way </h3>
+
+  Display: {{name}}
+    <input ng-model="model.name">
+      <div ng-if="!hide">Inside ng-if
+        <input ng-model="model.name">
+      </div>
+       <div >No ng-if
+        <input ng-model="model.name">
+      </div>
+  </div>
+</div>
+
+  </div>
+
