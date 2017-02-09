@@ -10,9 +10,11 @@
 angular.module('app2App')
   .controller('MainCtrl', function ($scope) {
   	$scope.hieu={}
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  $scope.alert = function(name){
+  	alert(name)
+  };
+  $scope.stopPropagation = function(name,$event){
+  	$scope.alert(name);
+  	$event.stopPropagation();
+  }
   });

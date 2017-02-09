@@ -127,12 +127,12 @@ body {
 
 }
 .child-left{
-  width: 100px;
+  width: 200px;
 
           transition: all 1s ease
 }
 .child-right{
-  width: calc(100% - 100px);
+  width: calc(100% - 200px);
 }
 .no-width{
   width: 0;

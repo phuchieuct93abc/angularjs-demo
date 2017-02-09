@@ -4,6 +4,7 @@
   </div>
   <div class="panel-body">
   <h3>Wrong way </h3>
+ <div>Model: {name}</div> 
 
   Display: {{name}}
     <input ng-model="name">
@@ -15,8 +16,9 @@
       </div>
   
 <h3>Correct way </h3>
+ <div>Model: {name}</div> 
 
-  Display: {{name}}
+  Display: {{hieu.name}}
     <input ng-model="hieu.name">
       <div ng-if="!hide">Inside ng-if
         <input ng-model="hieu.name">
